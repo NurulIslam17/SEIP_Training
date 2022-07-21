@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div1{
+    height: 300px;
+    width: 500px;
+    background-color: forestgreen;
+}
+.div2{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top:50px;
+    left: 130px;
+}
+.div3{
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    margin: 50px 0 50px 80px;
+    transition: 2s;
+}
+
+.div3:hover{
+    /*transform: scaleY(1.5);*/
+    /*transform: rotateX(-90deg);*/
+    /*transform: translate(20px,50px);*/
+    transform: skew(20deg);
+}
+.div4{
+    height: 200px;
+    width: 100px;
+    background-color: aqua;
+    float: left;
+    margin: 0 0 50px 15px;
+    transform: skewY(45deg);
+}
+.div5{
+    height: 200px;
+    width: 100px;
+    background-color: blue;
+    float: left;
+    margin: 0 0 50px 15px;
+    transform: skewY(-45deg);
+}
+
+.div6{
+    height: 200px;
+    width: 200px ;
+    background-color: yellowgreen;
+    float: left;
+    margin-left: 50px;
+    animation-name: imgSlide;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+@keyframes anim {
+    from {
+        background-color: red;
+    }
+    to{
+        background-color: aqua;
+    }
+}
+
+@keyframes  imgSlide {
+    0%{
+        background-color: greenyellow;
+    }
+    25%{
+        background-color: yellowgreen;
+    }
+    50%{
+        background-color: forestgreen;
+    }
+    100%{
+        background-color: green;
+    }
+}
