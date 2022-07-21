@@ -1,0 +1,63 @@
+
+
+.div-one{
+    height: 200px;
+    width:20%;
+    background-color: aqua;
+    float: left;
+}
+
+.div-two{
+    height: 200px;
+    width: 80%;
+    background-color: aquamarine;
+    float: left;
+}
+.div-three{
+    height: 50px;
+    width: 100%;
+    background-color: darkseagreen;
+    float: left;
+}
+.div-four{
+    height: 600px;
+    width: 20%;
+    background-color: yellow;
+    float: left;
+}
+.div-five{
+    height: 600px;
+    width: 80%;
+    background-color: darkgrey;
+    float: left;
+}
+.div-six{
+    height: 300px;
+    width: 25%;
+    background-color: black;
+    float: left;
+}
+.div-seven{
+    height: 300px;
+    width: 25%;
+   background-color: purple;
+    float: left;
+}
+.div-eight{
+    height: 300px;
+    width: 25%;
+    background-color: black;
+    float: left;
+}
+.div-nine{
+    height: 300px;
+    width: 25%;
+    background-color: red;
+    float: left;
+}
+.div-ten{
+    height: 40px;
+    width: 100%;
+    background-color: green;
+    float: left;
+}
