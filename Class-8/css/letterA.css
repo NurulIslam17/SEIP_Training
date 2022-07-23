@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.div1 ,.div2, .div3{
+    height: 300px;
+    width: 100px;
+    background-color: aqua;
+    float: left;
+}
+
+.div1{
+    transform: skewX(-45deg);
+}
+.div2{
+    transform: skewX(45deg);
+}
