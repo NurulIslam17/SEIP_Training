@@ -1,0 +1,21 @@
+.w-100{
+    width: 100%;
+}
+.h-8{
+    height: 90vh;
+}
+
+.my-caption
+{
+    bottom: 40%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.cap2{
+    bottom: 40%;
+    right: 0;
+}
+
+.prodImg{
+    height: 200px;
+}
