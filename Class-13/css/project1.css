@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.font-josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav1{
+    background-color: #ffcb0f;
+}
+.h-400{
+    height: 250px;
+}
+.search{
+    color: #ffcb0f;
+    font-weight: bolder;
+}
+.menu:hover{
+    color: gray;
+}
+.bgc-yellow{
+    background-colot: #ffcb0f;;
+}
+.text-color-yellow{
+    color: #ffcb0f;;
+}
+.btn-style{
+    background-color: #ffcb0f;
+    border-radius: 40px;
+    padding:10px 25px;
+}
+.text-justify{
+    text-align: justify;
+}
+.btn-style:hover{
+    color: #ffcb0f!important;
+}
+
+.banner-section{
+    background-image: url("../images/slider_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    opacity: .7;
+}
+.banner-title-h{
+    font-size: 75px;
+}
+
+.backImg{
+    background-image: url("../images/about_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(-50px);
+    height: 415px;
+}
+.image-minus-margin{
+    margin-top: -45px;
+}
+
+.why-us-bg{
+    background-color: #f2f7fa;
+}
+
+.element-in-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    background-color: #f7e59c;
+    padding: 10px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.div2{
+    background-color: #fadb64;
+    padding: 10px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.div3{
+    background-color: #ffcb0f;
+    padding: 10px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.div4{
+    background-color: #fff;
+    padding: 10px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #f2f7fa;
+}
+
+.cardDesign{
+    border: none;
+    background-color: transparent;
+}
+
+.service-1{
+    background-image: url("../images/service_img1.jpg");
+
+    height: 500px;
+}
+
+.service-2{
+    background-image: url("../images/service_img2.jpg");
+    height: 500px;
+}
+
+.service-3{
+    background-image: url("../images/service_img3.jpg");
+    height: 500px;
+}
+
