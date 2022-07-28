@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .font-josefin{
     font-family: 'Josefin Sans', sans-serif;
@@ -7,7 +8,15 @@
     background-color: #ffcb0f;
 }
 .h-400{
-    height: 250px;
+    height: 400px;
+}.h-200{
+    height: 200px;
+}.h-600{
+    height: 600px;
+}.h-700{
+    height: 700px;
+}.h-800{
+    height: 800px;
 }
 .search{
     color: #ffcb0f;
@@ -17,7 +26,7 @@
     color: gray;
 }
 .bgc-yellow{
-    background-colot: #ffcb0f;;
+    background-color: #ffcb0f;;
 }
 .text-color-yellow{
     color: #ffcb0f;;
@@ -118,3 +127,29 @@
     height: 500px;
 }
 
+.made-with-love{
+    background-image: url("../images/portfolio_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+/*.over-back-yellow:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    background-color: #ffcb0f;;*/
+/*    opacity: .9;*/
+/*}*/
+.over-back-yellow{
+    background-color: #ffcb0f;
+    padding: 0;
+    height: 100%;
+    opacity: .9;
+}
