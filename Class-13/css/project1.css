@@ -48,7 +48,7 @@
 }
 
 .banner-section{
-    background-image: url("../images/slider_img.jpg");
+    background-image:linear-gradient(rgba(4, 9, 50, 0.1), rgba(4, 9, 50, 0.4)),url("../images/slider_img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -186,4 +186,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+}
+.hover-grey:hover{
+    color: gainsboro;
+}
+
+.later-post-date{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+}
+.footer-bg{
+    background-color: #000000;
 }
