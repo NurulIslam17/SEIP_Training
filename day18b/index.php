@@ -4,7 +4,7 @@ use App\classes\Start;
 use \App\classes\Student;
 use App\classes\Example;
 
-$strtObj = new Start();
+//$strtObj = new Start();
 //$strtObj->index();
 //$studentObj = new Student();
 //$studentObj->appendHtml();
