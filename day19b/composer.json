@@ -1,0 +1,15 @@
+{
+  "name" : "day19b/day19b",
+  "type": "project",
+  "description" : "Simple Werbsite",
+  "licence" : "",
+  "keywords" : [],
+  "required" : {},
+  "require-dev" : {},
+  "autoload": {
+    "psr-4": {
+      "App\\" : "app//"
+    }
+  }
+
+}
