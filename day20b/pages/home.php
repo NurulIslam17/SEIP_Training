@@ -1,14 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-    <body>
-        <h1>Home page</h1>
+<?php include 'includes/header.php'?>
 
-    </body>
-</html>
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <?php foreach ($products as $product) { ?>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/products/<?php echo $product['image']?>" height="300" alt="NotFound" class="card-img-top img-hover-effect">
+                    <div class="card-body">
+                        <h4><?php echo $product['name']?></h4>
+                        <p><strong>Price : </strong> <?php echo $product['price']?> TK</p>
+                        <a href="" class="btn btn-outline-primary float-end">Details</a>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+
+</section>
+
+<?php include  'includes/footer.php'?>
+
