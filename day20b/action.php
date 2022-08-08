@@ -29,5 +29,12 @@
             $categoryProducts = $product->getProductByCategory($categoryId);
             include 'pages/categoryProducts.php';
         }
+        else if($_GET['page']=='detailProduct')
+        {
+            $details = $_GET['detailsId'];
+            $products = new Product();
+            $detailsProduct = $products->getProductDetails($details);
+            include 'pages/detailsProduct.php';
+        }
 
     }

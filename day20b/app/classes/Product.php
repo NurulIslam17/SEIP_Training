@@ -30,7 +30,7 @@ class Product
              2=>[
                  'id' => 3,
                  'category_id' => 2,
-                 'name' => 'Jamdani Saree',
+                 'name' => 'Jama',
                  'price'=> 2300,
                  'image' => 'saree (1)-min.jpg',
                  'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cumque debitis deleniti earum, enim et eum fugiat '
@@ -115,4 +115,18 @@ class Product
         }
         return $this->result;
     }
+
+    public function getProductDetails($details)
+    {
+        $this->products = $this->getAllProducts();
+
+        foreach ($this->products  as $product)
+        {
+            if($product['id']==$details)
+            {
+                return $product;
+            }
+        }
+    }
+
 }
