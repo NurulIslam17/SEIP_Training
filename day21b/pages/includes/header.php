@@ -17,8 +17,8 @@
         <ul class="navbar-nav">
             <li><a href="action.php?page=home" class="nav-link  text-light">Home</a></li>
             <li><a href="action.php?page=about" class="nav-link  text-light">About</a></li>
+            <li><a href="action.php?page=fullname" class="nav-link  text-light">Fullname</a></li>
             <li><a href="action.php?page=calculator" class="nav-link  text-light">Calculator</a></li>
-            <li><a href="action.php?page=fulname" class="nav-link  text-light">Fullname</a></li>
         </ul>
     </div>
 </nav>
