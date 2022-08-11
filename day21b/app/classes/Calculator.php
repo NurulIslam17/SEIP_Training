@@ -1,5 +1,4 @@
 <?php
-
 namespace App\classes;
 
 class Calculator
@@ -10,11 +9,6 @@ class Calculator
          $this->n1 = $data['n1'];
          $this->n2 = $data['n2'];
          $this->opp = $data['operations'];
-
-//         echo "<pre>";
-//         print_r($data);
-//         exit();
-
      }
      public function getNumber()
      {

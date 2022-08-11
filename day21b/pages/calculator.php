@@ -39,7 +39,7 @@
                                 <input type="text" class="form-control" name="" value="<?php echo isset($result)? $result : '' ?>" />
                             </div>
                             <div class="mt-2">
-                                <input type="submit" class="btn btn-success" name="result"  /  >
+                                <input type="submit" class="btn btn-outline-primary float-end" name="result"  /  >
                             </div>
                         </form>
 
