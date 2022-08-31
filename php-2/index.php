@@ -13,4 +13,5 @@ $operator = new Operator();
 $operator->add(12,23);
 $operator->sub(12,23);
 $operator->mult(12,23);
-$operator->pow(12,23);
+$operator->div(0,5);
+$operator->pow(4,2);
