@@ -50,5 +50,35 @@ class Home
         }
     }
 
+    public function switchStatement($data)
+    {
+        $this->n1=$data;
+
+        switch ($this->n1)
+        {
+            case 0:
+                echo 'Number is : '.$this->n1;
+                break;
+            case 1:
+                echo 'Number is : '.$this->n1;
+                break;
+            case 2:
+                echo 'Number is : '.$this->n1;
+                break;
+            case 5:
+                echo 'Number is : '.$this->n1;
+                break;
+            case 8:
+                echo 'Number is : '.$this->n1;
+                break;
+            case 9:
+                echo 'Number is : '.$this->n1;
+                break;
+            default:
+                echo 'Number Not Found';
+
+        }
+    }
+
 
 }
