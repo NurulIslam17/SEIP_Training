@@ -1,0 +1,49 @@
+
+/*.abtSec*/
+/*{*/
+/*    background: #b3d7de;*/
+/*}*/
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-32{
+    font-size: 32px;
+}
+
+.text-justify
+{
+    text-align: justify;
+}
+.about-us
+{
+    background-image: url(../aboutImg/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover!important;
+    height: 60vh;
+}
+.clr-red
+{
+    color: #f5101d;
+}
+.bg-red
+{
+    background: #f5101d;
+}
+.exlBtn
+{
+    font-size: 20px;
+    background: #f5101d;
+    padding: 8px 30px;
+    color: #fff3cd;
+    transition: 1s;
+}
+.exlBtn:hover
+{
+    background: #1e0fe5;
+    transform: scale(.9);
+    color: #fff3cd;
+}
