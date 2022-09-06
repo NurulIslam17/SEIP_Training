@@ -19,8 +19,19 @@
             <ul class="navbar-nav ms-auto">
                 <li> <a href="action.php?page=home" class="nav-link text-dark"> Home </a></li>
                 <li> <a href="action.php?page=about" class="nav-link text-dark"> About Us </a></li>
-                <li> <a href="action.php?page=products" class="nav-link text-dark"> Products </a></li>
-                <li> <a href="action.php?page=student" class="nav-link text-dark"> Student </a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu bg-warning border-0 rounded-0" aria-labelledby="navbarDropdown">
+                        <?php foreach ($allCategory as $data) { ?>
+                            <li class="bg-warning "><a class="dropdown-item" href="action.php?page=category&cate_is=<?php echo $data['id']?>"> <?php echo $data['name']?> </a></li>
+                        <?php } ?>
+                    </ul>
+                </li>
+
+                <li> <a href="action.php?page=student" class="nav-link text-dark"> Students </a></li>
             </ul>
         </div>
     </div>

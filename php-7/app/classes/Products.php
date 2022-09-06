@@ -70,13 +70,45 @@ class Products
                 'product_image'     =>'phn12.jpg',
                 'company_name'      =>'Samsung'
             ],
+            6=>[
+                'id'                =>7,
+                'category_id'       =>3,
+                'brand_id'          =>1,
+                'name'              =>'Titans Watch',
+                'price'             =>3500,
+                'description'       =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aperiam aspernatur beatae consectetur cumque cupiditate dolor dolorem dolorum et eum facilis ipsa itaque libero necessitatibus possimus quaerat quasi quibusdam quisquam quos repellat, similique ullam veniam, voluptatem voluptatum. Alias autem culpa fugiat, hic illum molestias nihil perferendis praesentium sed sequi?',
+                'product_image'     =>'wtc2.jpg',
+                'company_name'      =>'Titans'
+            ],
+            7=>[
+                'id'                =>8,
+                'category_id'       =>3,
+                'brand_id'          =>1,
+                'name'              =>'Rolex Mens',
+                'price'             =>80500,
+                'description'       =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aperiam aspernatur beatae consectetur cumque cupiditate dolor dolorem dolorum et eum facilis ipsa itaque libero necessitatibus possimus quaerat quasi quibusdam quisquam quos repellat, similique ullam veniam, voluptatem voluptatum. Alias autem culpa fugiat, hic illum molestias nihil perferendis praesentium sed sequi?',
+                'product_image'     =>'wtc1.jpg',
+                'company_name'      =>'Rolex'
+            ],
+            8=>[
+                'id'                =>9,
+                'category_id'       =>2,
+                'brand_id'          =>1,
+                'name'              =>'Galaxy S8+',
+                'price'             =>80500,
+                'description'       =>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aperiam aspernatur beatae consectetur cumque cupiditate dolor dolorem dolorum et eum facilis ipsa itaque libero necessitatibus possimus quaerat quasi quibusdam quisquam quos repellat, similique ullam veniam, voluptatem voluptatum. Alias autem culpa fugiat, hic illum molestias nihil perferendis praesentium sed sequi?',
+                'product_image'     =>'phn3.jpg',
+                'company_name'      =>'Samsung'
+            ],
         ];
 
     }
+
     public function allProduct()
     {
         return $this->products;
     }
+
     public  function  singleProdInfo($prodId)
     {
         $allProd = $this->products;
@@ -85,6 +117,20 @@ class Products
             if($singleOne['id']==$prodId)
             {
                 array_push($this->result,$singleOne);
+            }
+        }
+        return $this->result;
+    }
+
+
+    public function getCateProducts($cateId)
+    {
+        $allCategory = $this->products;
+        foreach ($allCategory as $items)
+        {
+            if($items['category_id']==$cateId)
+            {
+                array_push($this->result,$items);
             }
         }
         return $this->result;
