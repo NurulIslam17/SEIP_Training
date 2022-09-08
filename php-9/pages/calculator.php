@@ -6,29 +6,30 @@
                 <div class="card-header">
                     <h4 class="text-center">Calculator</h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body bg-warning">
                     <form action="action.php" method="post">
 
                         <div class="row mb-3">
                             <label class="col-md-4">First Number</label>
                             <div class="col-md-8">
-                                <input type="number" name="n1" placeholder="Enter First Number" class="form-control rounded-0" />
+                                <input type="number" name="n1" placeholder="Enter First Number" required class="form-control rounded-0" />
                             </div>
                         </div>
 
                         <div class="row mb-3">
                             <label class="col-md-4">Last Number</label>
                             <div class="col-md-8">
-                                <input type="number" name="n2" placeholder="Enter Last Number" class="form-control rounded-0" />
+                                <input type="number" name="n2" placeholder="Enter Last Number" required class="form-control rounded-0" />
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-md-4">Operations</label>
                             <div class="col-md-8">
-                                <input type="radio" name="operation" value=" + " />add
-                                <input type="radio" name="operation" value=" - "/>Sub
-                                <input type="radio" name="operation" value=" * "/>Mult
-                                <input type="radio" name="operation" value=" / "/>Div
+                                <input type="radio" name="operation" checked value="add" /> <strong>Add</strong>
+                                <input type="radio" name="operation" value="sub"/> <strong>Sub</strong>
+                                <input type="radio" name="operation" value="mult"/> <strong>Mult</strong>
+                                <input type="radio" name="operation" value="div"/> <strong>Div</strong>
+                                <input type="radio" name="operation" value="mod"/> <strong>Mod</strong>
                             </div>
                         </div>
 

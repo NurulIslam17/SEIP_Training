@@ -32,7 +32,6 @@
                     </ul>
                 </li>
 
-                <li> <a href="action.php?page=student" class="nav-link text-dark"> Students </a></li>
                 <li> <a href="action.php?page=calculator" class="nav-link text-dark"> Calculator </a></li>
                 <li> <a href="action.php?page=contact" class="nav-link text-dark"> Contact Us </a></li>
             </ul>

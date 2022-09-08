@@ -1,15 +1,16 @@
 <?php
 
 require_once 'vendor\autoload.php';
-use App\classes\Brand;
+
+use App\classes\Team;
 use App\classes\Category;
 use App\classes\Products;
 use App\classes\Home;
 use App\classes\Calculator;
 
 $productObj = new Products();
-
 $categoryObj = new Category();
+
 $allCategory = $categoryObj->allCategory();
 
 
@@ -19,6 +20,20 @@ if(isset($_GET['page']))
     {
         $allProducts = $productObj->allProduct();
         include 'pages/home.php';
+    }
+
+    elseif ($_GET['page']=='about')
+    {
+        $team = new Team();
+        $members = $team->allTeamMember();
+        include 'pages/about.php';
+    }
+    elseif ($_GET['page']=='aboutDetails')
+    {
+        $singleMember = $_GET['id'];
+        $team = new Team();
+        $singleOne = $team->getSingleMenber($singleMember);
+        include 'pages/member_details.php';
     }
 
     elseif ($_GET['page']=='category')
@@ -45,6 +60,9 @@ if(isset($_GET['page']))
     }
 }
 
+
+//POst
+
 elseif (isset($_POST['btnFullName']))
 {
     $firstName = $_POST['first_name'];
@@ -56,8 +74,8 @@ elseif (isset($_POST['btnFullName']))
 elseif (isset($_POST['btnRes']))
 {
 
-    $data = new Calculator($_POST);
-    $res = $data->getResult();
+    $data = new Calculator();
+    $res = $data->getResult($_POST);
     include 'pages/calculator.php';
 
 }
