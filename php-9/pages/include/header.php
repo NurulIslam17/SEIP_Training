@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
     <title>Document</title>
 </head>
 
@@ -32,6 +35,7 @@
                     </ul>
                 </li>
 
+                <li> <a href="action.php?page=gallery" class="nav-link text-dark"> Gallery </a></li>
                 <li> <a href="action.php?page=calculator" class="nav-link text-dark"> Calculator </a></li>
                 <li> <a href="action.php?page=contact" class="nav-link text-dark"> Contact Us </a></li>
             </ul>

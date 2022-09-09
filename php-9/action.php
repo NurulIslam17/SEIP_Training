@@ -7,6 +7,7 @@ use App\classes\Category;
 use App\classes\Products;
 use App\classes\Home;
 use App\classes\Calculator;
+use App\classes\Gallery;
 
 $productObj = new Products();
 $categoryObj = new Category();
@@ -48,6 +49,12 @@ if(isset($_GET['page']))
         $prodId = $_GET['id'];
         $singleProd = $productObj->singleProdInfo($prodId);
         include 'pages/product_details.php';
+    }
+    elseif ($_GET['page']=='gallery')
+    {
+        $galleryObj = new Gallery();
+        $galleryImg = $galleryObj->getAllGallery();
+        include 'pages/gallery.php';
     }
 
     elseif ($_GET['page']=='contact')
