@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 <nav class="navbar navbar-expand-md bg-warning sticky-top">
     <div class="container">
         <a href="action.php?page=home" class="navbar-brand"> <h4 class="fw-bold text-dark"> nW/3</h4></a>
