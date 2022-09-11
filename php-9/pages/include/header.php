@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-
-
     <title>Document</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
 <nav class="navbar navbar-expand-md bg-warning sticky-top">
     <div class="container">
         <a href="action.php?page=home" class="navbar-brand"> <h4 class="fw-bold text-dark"> nW/3</h4></a>
@@ -35,7 +32,7 @@
                     </ul>
                 </li>
 
-                <li> <a href="action.php?page=gallery" class="nav-link text-dark"> Gallery </a></li>
+                <li> <a href="action.php?page=student" class="nav-link text-dark"> Students </a></li>
                 <li> <a href="action.php?page=calculator" class="nav-link text-dark"> Calculator </a></li>
                 <li> <a href="action.php?page=contact" class="nav-link text-dark"> Contact Us </a></li>
             </ul>

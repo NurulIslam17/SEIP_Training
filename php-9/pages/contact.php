@@ -6,7 +6,7 @@
                     <div class="card-header">
                         <h4 class="text-center">Contact Form</h4>
                     </div>
-                    <div class="card-body bg-info">
+                    <div class="card-body">
                         <form action="action.php" method="post">
 
                             <div class="row mb-3">
@@ -33,7 +33,7 @@
                             <div class="row mb-3">
                                 <label class="col-md-3"></label>
                                 <div class="col-md-9">
-                                    <input type="submit" name="btnFullName" value="Full name" class="btn btn-warning text-dark fw-bold rounded-0" />
+                                    <input type="submit" name="btnFullName" value="Full name" class="btn btn-info text-dark fw-bold rounded-0" />
                                 </div>
                             </div>
 

@@ -1,17 +1,15 @@
 <?php
 
 require_once 'vendor\autoload.php';
-
-use App\classes\Team;
+use App\classes\Brand;
 use App\classes\Category;
 use App\classes\Products;
 use App\classes\Home;
 use App\classes\Calculator;
-use App\classes\Gallery;
 
 $productObj = new Products();
-$categoryObj = new Category();
 
+$categoryObj = new Category();
 $allCategory = $categoryObj->allCategory();
 
 
@@ -21,20 +19,6 @@ if(isset($_GET['page']))
     {
         $allProducts = $productObj->allProduct();
         include 'pages/home.php';
-    }
-
-    elseif ($_GET['page']=='about')
-    {
-        $team = new Team();
-        $members = $team->allTeamMember();
-        include 'pages/about.php';
-    }
-    elseif ($_GET['page']=='aboutDetails')
-    {
-        $singleMember = $_GET['id'];
-        $team = new Team();
-        $singleOne = $team->getSingleMenber($singleMember);
-        include 'pages/member_details.php';
     }
 
     elseif ($_GET['page']=='category')
@@ -50,12 +34,6 @@ if(isset($_GET['page']))
         $singleProd = $productObj->singleProdInfo($prodId);
         include 'pages/product_details.php';
     }
-    elseif ($_GET['page']=='gallery')
-    {
-        $galleryObj = new Gallery();
-        $galleryImg = $galleryObj->getAllGallery();
-        include 'pages/gallery.php';
-    }
 
     elseif ($_GET['page']=='contact')
     {
@@ -66,9 +44,6 @@ if(isset($_GET['page']))
         include 'pages/calculator.php';
     }
 }
-
-
-//POst
 
 elseif (isset($_POST['btnFullName']))
 {
@@ -81,8 +56,8 @@ elseif (isset($_POST['btnFullName']))
 elseif (isset($_POST['btnRes']))
 {
 
-    $data = new Calculator();
-    $res = $data->getResult($_POST);
+    $data = new Calculator($_POST);
+    $res = $data->getResult();
     include 'pages/calculator.php';
 
 }
