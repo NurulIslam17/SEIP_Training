@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
 
         <div class="col-md-5">
-            <div class="card rounded-0">
+            <div class="card rounded-0 shadow">
                 <div class="card-header text-center">{{ ('Enter Information') }}</div>
 
                 <div class="card-body rounded-0">
@@ -14,9 +14,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                        <form action="" method="post">
+                        <form action="{{route('new.student')}}" method="post">
                             @csrf
-
+                            <p class="text-center text-success"> {{ Session('Msg') }}</p>
                             <div class="row mb-2">
                                 <label for="" class="col-md-4">First Name</label>
                                 <div class="col-md-8">
@@ -66,7 +66,41 @@
         </div>
 
         <div class="col-md-7">
-            dgbdf
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">All Students</h3>
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr class="bg-warning">
+                                <th> SL</th>
+                                <th> Name</th>
+                                <th> Roll</th>
+                                <th> Email</th>
+                                <th> Phone</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach($students as $data)
+                                <tr>
+                                    <td> {{$data->id}} </td>
+                                    <td> {{$data->first_name.' '.$data->last_name}}</td>
+                                    <td> {{$data->roll}}</td>
+                                    <td> {{$data->email}} </td>
+                                    <td> {{$data->phn}}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+
+
+
+                    </table>
+
+                </div>
+            </div>
         </div>
 
     </div>
