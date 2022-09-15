@@ -17,7 +17,7 @@
                         @endif
 
 
-                        <form action="{{route('update.student')}}" method="post">
+                        <form action="{{route('update.student')}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <p class="text-center text-success"> {{ Session('Msg') }}</p>
                             <input type="hidden" name="update_id" value="{{ $editStudent->id }}" class="form-control rounded-0" />
@@ -54,6 +54,25 @@
                                     <input type="number" name="phone" value="{{ $editStudent->phone }}" class="form-control rounded-0" />
                                 </div>
                             </div>
+
+                            <div class="row mb-2">
+                                <label for="" class="col-md-4">New Image</label>
+                                <div class="col-md-8">
+                                    <input type="file" name="image" class=" rounded-0" />
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <label for="" class="col-md-4">Old Img</label>
+                                <div class="col-md-8">
+                                    <td>
+                                        <img src="{{ asset($editStudent->image) }}" height="100px" width="100px">
+                                    </td>
+                                    </td>
+                                </div>
+                            </div>
+
+
 
                             <div class="row mb-2">
                                 <label for="" class="col-md-4"></label>

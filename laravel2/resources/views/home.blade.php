@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
 
-        <div class="col-md-5">
+        <div class="col-md-4">
             <div class="card rounded-0 shadow">
                 <div class="card-header text-center">
                     <h3> Enter Information</h3>
@@ -16,18 +16,18 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                        <form action="{{route('new.student')}}" method="post">
+                        <form action="{{route('new.student')}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <p class="text-center text-success"> {{ Session('Msg') }}</p>
                             <div class="row mb-2">
-                                <label for="" class="col-md-4">First Name</label>
+                                <label for="" class="col-md-4">F Name</label>
                                 <div class="col-md-8">
                                     <input type="text" name="first_name" placeholder="Enter First Name" class="form-control rounded-0" />
                                 </div>
                             </div>
 
                             <div class="row mb-2">
-                                <label for="" class="col-md-4">Last Name</label>
+                                <label for="" class="col-md-4">L Name</label>
                                 <div class="col-md-8">
                                     <input type="text" name="last_name" placeholder="Enter Last Name" class="form-control rounded-0" />
                                 </div>
@@ -47,9 +47,15 @@
                                 </div>
                             </div>
                             <div class="row mb-2">
-                                <label for="" class="col-md-4">Phone Number</label>
+                                <label for="" class="col-md-4">Phone</label>
                                 <div class="col-md-8">
                                     <input type="number" name="phone" placeholder="Enter Phone" class="form-control rounded-0" />
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <label for="" class="col-md-4">Image</label>
+                                <div class="col-md-8">
+                                    <input type="file" name="image" class=" rounded-0" />
                                 </div>
                             </div>
 
@@ -67,7 +73,7 @@
             </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
                     <h3 class="text-center">All Students</h3>
@@ -78,11 +84,11 @@
                     <table class="table table-bordered table-striped">
                         <thead>
                             <tr class="bg-info">
-                                <th> SL</th>
                                 <th> Name</th>
                                 <th> Roll</th>
                                 <th> Email</th>
                                 <th> Phone</th>
+                                <th> Image</th>
                                 <th> Action</th>
                             </tr>
                         </thead>
@@ -93,11 +99,13 @@
                             @endphp
                             @foreach($students as $data)
                                 <tr>
-                                    <td> {{ $i++ }} </td>
                                     <td> {{$data->first_name.' '.$data->last_name}}</td>
                                     <td> {{$data->roll}}</td>
                                     <td> {{$data->email}} </td>
                                     <td> {{$data->phone}}</td>
+                                    <td>
+                                        <img src="{{ asset($data->image) }}" height="100px" width="100px">
+                                    </td>
                                     <td class="text-center">
                                         <a href="{{ route('student.edit',['id'=>$data->id]) }}" class="btn btn-success rounded-0 mb-2" title="Edit"> Edit </a>
 {{--                                        <a href="{{route('student.delete',['id'=>$data->id])}}" onclick="return confirm('Are you sure to delete It ?')"  class="btn btn-danger rounded-0" title="Delete"> Delete </a>--}}
