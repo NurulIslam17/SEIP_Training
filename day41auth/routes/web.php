@@ -30,4 +30,13 @@ Route::middleware([
     Route::get('/add-product',[ProductController::class,'addProduct'])->name('add.product');
     Route::get('/view-product',[ProductController::class,'viewProduct'])->name('view.product');
 
+    //new.product
+    Route::post('/new-product',[ProductController::class,'newProduct'])->name('new.product');
+    //delete.product
+    Route::post('/delete-product',[ProductController::class,'deleteProduct'])->name('delete.product');
+    //edit.product
+    Route::post('/edit-product',[ProductController::class,'editProduct'])->name('edit.product');
+    //updated.product
+    Route::post('/update-product',[ProductController::class,'updateProduct'])->name('update.product');
+
 });
