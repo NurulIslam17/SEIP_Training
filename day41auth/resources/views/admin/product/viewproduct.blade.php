@@ -9,10 +9,9 @@
                 </div>
                 <div class="card-body">
                     <p class="text-center text-danger">{{Session('dlt')}}</p>
-                    <p class="text-center text-danger">{{Session('update')}}</p>
                     <table class="table table-bordered table-hover">
                         <thead>
-                            <tr>
+                            <tr class="bg-warning">
                                 <th> SL</th>
                                 <th> Product</th>
                                 <th> Category</th>
@@ -30,11 +29,11 @@
                             @foreach($products as $val)
                                 <tr>
                                     <td> {{$i++}} </td>
-                                    <td> {{$val->iproduct_name}} </td>
+                                    <td> {{$val->product_name}} </td>
                                     <td> {{$val->product_category}} </td>
                                     <td> {{$val->product_brand}} </td>
                                     <td> {{$val->product_price}} TK</td>
-                                    <td> {{$val->product_status}} </td>
+                                    <td> {{$val->product_status == '1' ? 'Published' : 'Unpublished'}} </td>
                                     <td> {{$val->product_description}} </td>
                                     <td>
                                         <img src="{{asset($val->product_image)}}" style="height: 100px; width: 100px"/>

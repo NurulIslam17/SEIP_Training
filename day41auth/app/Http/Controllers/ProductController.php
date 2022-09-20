@@ -2,9 +2,24 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
+
+
 class ProductController extends Controller
 {
     public $product,$products;
+
+    private $img,$imageName,$imgDir,$imgUrl;
+
+    public function saveImg($request)
+    {
+        $this->img          = $request->file('product_image');
+        $this->imageName    = rand().'.'.$this->img->getClientOriginalName();
+        $this->imgDir       = 'adminupload/product/';
+        $this->img->move($this->imgDir,$this->imageName  );
+        $this->imgUrl       = $this->imgDir.$this->imageName ;
+
+        return $this->imgUrl;
+    }
 
     public function addProduct()
     {
@@ -31,18 +46,15 @@ class ProductController extends Controller
 
     public function editProduct(Request $request)
     {
-        $edit_id = Product::find($request->edit_id);
-        return view('admin.product.edit',compact('edit_id'));
+        return view('admin.product.edit',[
+            'data'       => Product::find($request->edit_id),
+            'allData'    => Product::all()
+        ]);
     }
 
     public  function updateProduct(Request $request)
     {
-
-//        $update_id = new Product();
-//        $update_id->updateProduct($request);
-//        return redirect()->back()->with('update','Product Updated');
-
-        $update_id = $request->updated_id;
-        return $update_id;
+        $this->product  = Product::find($request->update_id);
+        return $request;
     }
 }

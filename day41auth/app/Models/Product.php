@@ -45,11 +45,4 @@ class Product extends Model
         $deleteById->delete();
     }
 
-//    public function updateProduct($request)
-//    {
-//        $updateId = Product::find($request->updated_id);
-//        return $updateId;
-//    }
-
-
 }

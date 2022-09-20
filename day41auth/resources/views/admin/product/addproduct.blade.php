@@ -10,6 +10,7 @@
                             <h3 class="text-center">Add Product</h3>
                         </div>
                         <div class="card-body">
+
                             <form action="{{ route('new.product') }}" method="post" enctype="multipart/form-data">
                                 @csrf
 
@@ -18,14 +19,14 @@
                                 <div class="row mt-2">
                                     <label class="col-md-4">Product Name</label>
                                     <div class="col-md-8">
-                                        <input type="text" name="product_name" class="form-control rounded-0" placeholder="Enter Product Name">
+                                        <input type="text" name="product_name"  class="form-control rounded-0" placeholder="Enter Product Name">
                                     </div>
                                 </div>
 
                                 <div class="row mt-2">
                                     <label class="col-md-4">Product Category</label>
                                     <div class="col-md-8">
-                                        <input type="text" name="product_category" class="form-control rounded-0" placeholder="Enter Product Category">
+                                        <input type="text" name="product_category"  class="form-control rounded-0" placeholder="Enter Product Category">
                                     </div>
                                 </div>
                                 <div class="row mt-2">
@@ -75,6 +76,7 @@
 
 
                             </form>
+
                         </div>
                     </div>
                 </div>
