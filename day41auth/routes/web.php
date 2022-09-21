@@ -5,6 +5,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\FontendController;
 
 Route::get('/',[FontendController::class,'index'])->name('home.page');
+Route::get('/product-details/{id}',[FontendController::class,'productDetails'])->name('product.details');
 
 Route::middleware([
     'auth:sanctum',

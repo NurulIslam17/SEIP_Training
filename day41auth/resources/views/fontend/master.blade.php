@@ -42,6 +42,7 @@
                         <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
                         <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
                         <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                        <li><a href="{{ route('login') }}"><i class="fa fa-user"></i> Admin</a></li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +105,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="{{route('home.page')}}">Home</a></li>
                     <li><a href="shop.html">Shop page</a></li>
                     <li><a href="single-product.html">Single product</a></li>
                     <li><a href="cart.html">Cart</a></li>
