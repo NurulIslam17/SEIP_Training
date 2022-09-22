@@ -39,8 +39,8 @@
                     <ul>
                         <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
                         <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                        <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                        <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i> My Cart</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i> Checkout</a></li>
                         <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
                         <li><a href="{{ route('login') }}"><i class="fa fa-user"></i> Admin</a></li>
                     </ul>
@@ -85,7 +85,7 @@
 
             <div class="col-sm-6">
                 <div class="shopping-item">
-                    <a href="cart.html">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                    <a href="#">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
                 </div>
             </div>
         </div>
@@ -106,10 +106,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="{{route('home.page')}}">Home</a></li>
-                    <li><a href="shop.html">Shop page</a></li>
-                    <li><a href="single-product.html">Single product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="#">Shop page</a></li>
+                    <li><a href="#">Single product</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
                     <li><a href="#">Category</a></li>
                     <li><a href="#">Others</a></li>
                     <li><a href="#">Contact</a></li>

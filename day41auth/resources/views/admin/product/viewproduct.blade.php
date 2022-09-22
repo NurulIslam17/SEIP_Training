@@ -34,7 +34,7 @@
                                     <td> {{$val->product_brand}} </td>
                                     <td> {{$val->product_price}} TK</td>
                                     <td> {{$val->product_status == '1' ? 'Published' : 'Unpublished'}} </td>
-                                    <td> {{$val->product_description}} </td>
+                                    <td> {{substr($val->product_description,0,50).'...'}} </td>
                                     <td>
                                         <img src="{{asset($val->product_image)}}" style="height: 100px; width: 100px"/>
                                     </td>
